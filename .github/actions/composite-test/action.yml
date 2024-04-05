@@ -14,4 +14,4 @@ runs:
       shell: pwsh
       run: |        
         Write-Host "The folder does not exist."
-        echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build ${{ github.action }}|${{}inputs.PACKAGES_FOLDER_PATH}"
+        echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build ${{ github.action }}|${{inputs.PACKAGES_FOLDER_PATH}}"
