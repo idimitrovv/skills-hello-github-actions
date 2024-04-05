@@ -19,4 +19,6 @@ jobs:
 
       - name: Publish package test
         uses: ./.github/actions/composite-test
+        with:
+          PACKAGES_FOLDER_PATH: ${{ github.action }}
     
