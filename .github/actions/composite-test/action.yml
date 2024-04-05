@@ -2,6 +2,11 @@ name: test composite action
 
 description: "Reusable action just test"
 
+inputs:
+  PACKAGES_FOLDER_PATH:
+    required: true
+    type: string
+
 runs:
   using: "composite"
   steps:
