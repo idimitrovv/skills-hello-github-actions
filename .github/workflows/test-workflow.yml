@@ -1,0 +1,14 @@
+name: Workflow just for testing needs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  step-1:
+    name: Just testing
+    runs-on: windows-latest
+    steps:
+      - name: Add Annotations
+        run: |
+          echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build"
+    
