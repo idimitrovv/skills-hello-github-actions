@@ -15,6 +15,7 @@ jobs:
           echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build"
           echo "::error title=No documentation artifacts::No documentation artifacts where produced by this build"
           echo "::notice title=No documentation artifacts::No documentation artifacts where produced by this build"
+          echo "${{ github.action }}"
 
       - name: Publish package test
         uses: ./.github/actions/composite-test
