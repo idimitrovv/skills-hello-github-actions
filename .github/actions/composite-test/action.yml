@@ -1,0 +1,12 @@
+name: test composite action
+
+description: "Reusable action just test"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Publish nuget packages
+      shell: pwsh
+      run: |        
+          Write-Host "The folder does not exist."
+          echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build ${{ github.action }}"
