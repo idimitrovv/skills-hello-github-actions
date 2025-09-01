@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Add Annotations
         run: |
           echo "::warning title=No documentation artifacts::No documentation artifacts where produced by this build"
